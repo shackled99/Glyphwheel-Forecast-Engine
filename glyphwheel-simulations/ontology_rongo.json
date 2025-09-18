@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "framework": "Glyphwheel Pattern Collapse",
+    "version": "2.0 (Final) + Rongo",
+    "date": "2025-09-18",
+    "notes": "Includes Rongorongo Ledger and Rongo Fracture nodes"
+  },
+  "nodes": [
+    {
+      "id": "rongo_ledger",
+      "label": "\u25ca Rongorongo Ledger",
+      "gsi": 0.78,
+      "domain": "Rongorongo"
+    },
+    {
+      "id": "rongo_fracture",
+      "label": "\u25ca Rongo Fracture",
+      "gsi": 0.72,
+      "domain": "Rongo Fractal"
+    }
+  ],
+  "edges": [
+    {
+      "source": "rongo_ledger",
+      "target": "rongo_fracture",
+      "tension": 0.32,
+      "type": "Recursive Hinge"
+    }
+  ]
+}

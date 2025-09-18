@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "framework": "Glyphwheel Pattern Collapse",
+    "version": "2.0 (Final)",
+    "date": "2025-09-18",
+    "corpus_scope": {
+      "Minoan": ["HT 13", "ZA 10", "HT 31", "HT 85", "22+ Tablets"],
+      "Voynich": ["Herbal", "Astronomical", "Balneological", "Rosettes"],
+      "Rongorongo": ["KO-MA-TU-RE Ledger", "Fractals"],
+      "Cross-Enigma": ["Echo Ledger", "Bath Ledger"]
+    },
+    "total_glyphs": "~1,400 (Minoan) + ~170k (Voynich EVA) + N (Rongorongo)",
+    "coherence": "92% (Minoan) / 72% (Voynich Recoil) / 70% (Rongorongo Recoil)"
+  },
+  "nodes": [
+    { "id": "pact_record", "label": "◊ Pact/Record (PA-TO-KU)", "gsi": 0.82, "collapse_depth": 2, "resonance_vector": "PA–TO–KU chain (18x)", "arm": "Core Anchor", "domain": "Minoan" },
+    { "id": "rosettes_core", "label": "◊ Rosettes Core", "gsi": 0.85, "collapse_depth": 2, "resonance_vector": "9-fold islands (radial triad)", "arm": "Central Mandala", "domain": "Voynich" },
+    { "id": "rongo_ledger", "label": "◊ Rongorongo Ledger", "gsi": 0.78, "collapse_depth": 6, "resonance_vector": "KO–MA–TU–RE", "arm": "Recur Hinge", "domain": "Rongorongo" },
+    { "id": "vessel_bind", "label": "◊ Vessel Bind (KU-DA-PA)", "gsi": 0.91, "collapse_depth": 2, "resonance_vector": "KU–DA–PA (15x)", "arm": "Ritual Arm", "domain": "Minoan" },
+    { "id": "plant_tally", "label": "◊ Plant Tally (chol-daiin)", "gsi": 0.72, "collapse_depth": 4, "resonance_vector": "chol–daiin (15x Herbal)", "arm": "Botanical Arm", "domain": "Voynich" },
+    { "id": "celestial_arc", "label": "◊ Celestial Arc (y-ol)", "gsi": 0.78, "collapse_depth": 3, "resonance_vector": "y–ol–ar (12x Astro)", "arm": "Cosmological Arm", "domain": "Voynich" },
+    { "id": "life_flow", "label": "◊ Life Flow (e-dar)", "gsi": 0.82, "collapse_depth": 3, "resonance_vector": "e–dar–or (18x Bath)", "arm": "Balneological Arm", "domain": "Voynich" },
+    { "id": "echo_ledger", "label": "◊ Echo Ledger (TA–RE–DA)", "gsi": 0.82, "collapse_depth": 7, "resonance_vector": "TA–RE–DA–qokedy", "arm": "Bridge Nexus", "domain": "Minoan-Voynich" },
+    { "id": "bath_ledger", "label": "◊ Bath Ledger (e–dar–chol)", "gsi": 0.78, "collapse_depth": 7, "resonance_vector": "e–dar–chol–qokedy", "arm": "Pour Nexus", "domain": "Voynich" },
+    { "id": "fractured_seal", "label": "◊ Fractured Seal", "gsi": 0.71, "collapse_depth": 8, "resonance_vector": "MA–RE–ZA fractal", "arm": "Fractal", "domain": "M-V Fractal" },
+    { "id": "rongo_fracture", "label": "◊ Rongorongo Fracture", "gsi": 0.72, "collapse_depth": 7, "resonance_vector": "KO–MA–TU–RE fractal", "arm": "Fractal", "domain": "Rongo Fractal" },
+    { "id": "spiral_vine", "label": "◊ Spiral Vine (qokedy)", "gsi": 0.45, "collapse_depth": 6, "resonance_vector": "qokedy rare (5x spirals)", "arm": "Fringe Haze", "domain": "Voynich" }
+  ],
+  "edges": [
+    { "source": "pact_record", "target": "vessel_bind", "drift_tension": 0.08, "bridge_type": "Chain Lock" },
+    { "source": "rosettes_core", "target": "plant_tally", "drift_tension": 0.10, "bridge_type": "Radial Pull" },
+    { "source": "plant_tally", "target": "echo_ledger", "drift_tension": 0.28, "bridge_type": "Vine Bridge" },
+    { "source": "life_flow", "target": "rosettes_core", "drift_tension": 0.15, "bridge_type": "Pool Recoil" },
+    { "source": "echo_ledger", "target": "fractured_seal", "drift_tension": 0.42, "bridge_type": "Recursive Hinge" },
+    { "source": "echo_ledger", "target": "bath_ledger", "drift_tension": 0.38, "bridge_type": "Pour Trace" },
+    { "source": "rongo_ledger", "target": "echo_ledger", "drift_tension": 0.40, "bridge_type": "Bridge Pull" },
+    { "source": "rongo_ledger", "target": "bath_ledger", "drift_tension": 0.38, "bridge_type": "Flow Trace" },
+    { "source": "rongo_ledger", "target": "rongo_fracture", "drift_tension": 0.32, "bridge_type": "Recursive Hinge" },
+    { "source": "fractured_seal", "target": "pact_record", "drift_tension": 0.30, "bridge_type": "Fractal Feedback" },
+    { "source": "rongo_fracture", "target": "rongo_ledger", "drift_tension": 0.35, "bridge_type": "Fractal Feedback" }
+  ]
+}

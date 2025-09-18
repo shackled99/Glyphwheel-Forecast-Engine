@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "framework": "Glyphwheel Pattern Collapse",
+    "version": "2.0 (Final)",
+    "date": "2025-09-18",
+    "notes": "Full Minoan, Voynich, Echo Ledger, Bath Ledger, Fractured Seal"
+  },
+  "nodes": [
+    {
+      "id": "pact_record",
+      "label": "\u25ca Pact/Record",
+      "gsi": 0.82,
+      "domain": "Minoan"
+    },
+    {
+      "id": "rosettes_core",
+      "label": "\u25ca Rosettes Core",
+      "gsi": 0.85,
+      "domain": "Voynich"
+    },
+    {
+      "id": "echo_ledger",
+      "label": "\u25ca Echo Ledger",
+      "gsi": 0.82,
+      "domain": "Minoan-Voynich"
+    },
+    {
+      "id": "bath_ledger",
+      "label": "\u25ca Bath Ledger",
+      "gsi": 0.78,
+      "domain": "Voynich"
+    },
+    {
+      "id": "fractured_seal",
+      "label": "\u25ca Fractured Seal",
+      "gsi": 0.71,
+      "domain": "M-V Fractal"
+    }
+  ],
+  "edges": [
+    {
+      "source": "pact_record",
+      "target": "echo_ledger",
+      "tension": 0.15,
+      "type": "Ritual Hinge"
+    },
+    {
+      "source": "echo_ledger",
+      "target": "bath_ledger",
+      "tension": 0.38,
+      "type": "Pour Trace"
+    },
+    {
+      "source": "echo_ledger",
+      "target": "fractured_seal",
+      "tension": 0.42,
+      "type": "Recursive Hinge"
+    }
+  ]
+}

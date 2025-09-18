@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "framework": "Glyphwheel Pattern Collapse",
+    "version": "v22",
+    "date": "2025-09-18",
+    "notes": "Minoan and Voynich core nodes, pre-Rongo"
+  },
+  "nodes": [
+    {
+      "id": "pact_record",
+      "label": "\u25ca Pact/Record",
+      "gsi": 0.82,
+      "domain": "Minoan"
+    },
+    {
+      "id": "rosettes_core",
+      "label": "\u25ca Rosettes Core",
+      "gsi": 0.85,
+      "domain": "Voynich"
+    }
+  ],
+  "edges": [
+    {
+      "source": "pact_record",
+      "target": "rosettes_core",
+      "tension": 0.1,
+      "type": "Test Edge"
+    }
+  ]
+}
