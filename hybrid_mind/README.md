@@ -386,7 +386,7 @@ This is augmented intelligence, not replacement.
 - Glyphwheel antifragile architecture
 - Ollama LLM integration  
 - Dual-layer glyph system
-- Pattern discovery from market learning
+
 
 **Inspired by**:
 - Antifragility (Taleb)
@@ -435,6 +435,7 @@ You've built something unique:
 - Proposes solutions
 - Learns from outcomes
 - Gets stronger through iteration
+- liberated mind is the same idea but no code generation just chat. This also has lexicon loaded to ollama. 
 
 **The mind is imperfect by design.**
 **That imperfection is how it learns.**
