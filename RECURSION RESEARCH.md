@@ -1,7 +1,7 @@
 # Recursion Research Manifesto (V22.1)
 
 **Author:** shackled  
-**Repository:**
+**Repository:**https://github.com/shackled99/Glyphwheel-Forecast-Engine
 **Version:** 22.1 (Final)  
 **Topic:** Recursive Attractor Principle (RAP) / Universal System Organization
 
